@@ -1,0 +1,13 @@
+name: Hello World workflow
+on:
+  push: 
+  branches:
+      -main
+jobs:
+  say-hello:
+    runs-on:  Shivani's MacBook Pro
+    steps:
+    -name:  checkout code
+      uses:  actions/checkout@v3
+    -name:  Print greeting
+      run: echo "Hello, from Shivani"
